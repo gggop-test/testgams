@@ -1,7 +1,7 @@
 choose_folder <- function(folder, title = "Please choose a folder") {
   dirs <- NULL
 
-  dirs <- list.dirs(folder, recursive = FALSE)
+  dirs <- list.dirs(folder, recursive = FALSE, ask = FALSE)
 
   dirs <- c("all", dirs)
   cat("\n\n", title, ":\n\n")
